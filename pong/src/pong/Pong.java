@@ -76,7 +76,6 @@ public class Pong extends Canvas implements Runnable, KeyListener {
 			tick();
 			render();
 			try {
-
 				Thread.sleep(1000 / 60);
 			} catch (InterruptedException e) {
 
@@ -92,11 +91,9 @@ public class Pong extends Canvas implements Runnable, KeyListener {
 		if (e.getKeyCode() == KeyEvent.VK_RIGHT) 
 		{
 			player.right = true;
-			player.left = false;
 		} 
 		else if (e.getKeyCode() == KeyEvent.VK_LEFT) 
 		{
-			player.right = false;
 			player.left = true;
 		}
 	}
